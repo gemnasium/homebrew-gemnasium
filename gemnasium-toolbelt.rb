@@ -3,9 +3,8 @@ require "formula"
 class GemnasiumToolbelt < Formula
   homepage "https://gemnasium.com"
 
-  url "https://github.com/gemnasium/toolbelt", using: :git
-  sha1 "f80b84615a5ef32be18093f759d27f181e5d7731"
-  version "0.1.0"
+  url "https://github.com/gemnasium/toolbelt/archive/v0.1.0.tar.gz"
+  sha1 "999f5642f4ba554e7b6aa8780e3203c24d4e2e63"
 
   # head "https://github.com/gemnasium/toolbelt", using: :git, branch: "master"
 
