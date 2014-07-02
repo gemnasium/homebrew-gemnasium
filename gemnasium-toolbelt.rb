@@ -3,8 +3,8 @@ require "formula"
 class GemnasiumToolbelt < Formula
   homepage "https://gemnasium.com"
 
-  url "https://github.com/gemnasium/toolbelt/archive/v0.2.1.tar.gz"
-  sha1 "e620f4f28543ea4e944704e9b769b6cadbae11d7"
+  url "https://github.com/gemnasium/toolbelt/archive/0.2.2.tar.gz"
+  sha1 "3da1b3c2b33e8a1ba8f73fa97d6d25fd9e8b61d5"
 
   # head "https://github.com/gemnasium/toolbelt", using: :git, branch: "master"
 
