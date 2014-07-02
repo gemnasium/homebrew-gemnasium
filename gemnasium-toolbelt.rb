@@ -11,7 +11,9 @@ class GemnasiumToolbelt < Formula
   depends_on "go"
 
   def install
-    system "go build -o gemnasium"
+    system "go build -o toolbelt"
+    # Cannot directly build as gemnasium since there's already a directory named gemnasium
+    system "mv toolbelt gemnasium"
     bin.install "gemnasium"
   end
 
