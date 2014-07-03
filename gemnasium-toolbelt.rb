@@ -6,11 +6,16 @@ class GemnasiumToolbelt < Formula
   url "https://github.com/gemnasium/toolbelt/archive/0.2.2.tar.gz"
   sha1 "3da1b3c2b33e8a1ba8f73fa97d6d25fd9e8b61d5"
 
-  # head "https://github.com/gemnasium/toolbelt", using: :git, branch: "master"
+  head "https://github.com/gemnasium/toolbelt", using: :git, branch: "master"
 
-  depends_on "go"
+  depends_on "go" => :build
 
   def install
+    ENV["GOPATH"] = buildpath
+    # build a proper GOPATH tree for local dependencies
+    (buildpath + "src/github.com/gemnasium/toolbelt").install "models", "gemnasium", "utils", "config", "commands", "autoupdate", "auth"
+
+    system "go", "get", "-d"
     system "go build -o #{bin}/gemnasium"
   end
 
