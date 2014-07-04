@@ -11,7 +11,7 @@ class GemnasiumToolbelt < Formula
   def install
     ENV["GOPATH"] = buildpath
     # build a proper GOPATH tree for local dependencies
-    (buildpath + "src/github.com/gemnasium/toolbelt").install "models", "gemnasium", "utils", "config", "commands", "autoupdate", "auth"
+    (buildpath + "src/github.com/gemnasium/toolbelt").install "models", "gemnasium", "utils", "config", "commands", "autoupdate", "auth", "live-eval"
 
     system "go", "get", "-d"
     system "go build -o #{bin}/gemnasium"
