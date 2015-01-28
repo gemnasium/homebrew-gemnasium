@@ -29,7 +29,7 @@ class GemnasiumToolbelt < Formula
     to save your Gemnasium credentials.
 
     If you already have a project on Gemnasium, you'll need to run
-      gemnasium projects configure
+      gemnasium configure
 
     If you want to create a new project on Gemnasium, you'll need to run
       gemnasium projects create
