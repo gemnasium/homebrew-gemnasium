@@ -4,7 +4,7 @@ class GemnasiumToolbelt < Formula
   homepage "https://gemnasium.com"
 
   url "https://github.com/gemnasium/toolbelt/archive/0.2.8.tar.gz"
-  sha1 "eb9693eeb691495e97fbbd5f0b2aabb2"
+  sha1 "771e2bb6b763b6e1e32471ab354af0b797bc94a3"
 
   depends_on "go" => :build
 
