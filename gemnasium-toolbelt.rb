@@ -3,8 +3,8 @@ require "formula"
 class GemnasiumToolbelt < Formula
   homepage "https://gemnasium.com"
 
-  url "https://github.com/gemnasium/toolbelt/archive/0.2.10.tar.gz"
-  sha256 "d30e3a75469883ffba78c6fb79b4b04a88dc8749a6e4b2f0f1fe3f29c9e98e14"
+  url "https://github.com/gemnasium/toolbelt/archive/0.2.11.tar.gz"
+  sha256 "13f52abb486b3a915da30ba948c15692da4160f6954777899b994f2bcb4190fc"
 
   depends_on "go" => :build
 
